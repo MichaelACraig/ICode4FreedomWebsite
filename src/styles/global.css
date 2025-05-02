@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Mechanismo';
+  src: url(MechanismoRegular-p7ywa.otf);
+}
+
+/*Global CSS */
+body{
+  margin: 0;
+  background-color: #2F3438;
+}
+
+/* Navbar.astro*/
+.nav{
+  display: inline;
+}
+
+.nav li{
+  float: left;
+}
+
+.nav a {
+  display: block;
+  text-align: center;
+  font-family: 'Mechanismo';
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 32px;
+  color: #fff;
+}
+
+.nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #363C3F;
+}
+
