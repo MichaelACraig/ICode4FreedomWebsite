@@ -6,7 +6,7 @@
 /*Global CSS */
 body{
   margin: 0;
-  background-color: #2F3438;
+  background-color: #1e2124;
 }
 
 /* Navbar.astro*/
@@ -33,6 +33,6 @@ body{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #363C3F;
+  background-color: #2F3438;
 }
 
