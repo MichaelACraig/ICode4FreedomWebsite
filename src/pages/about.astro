@@ -1,7 +1,6 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import '../styles/global.css'
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About me";
 
 const identity = {
@@ -13,7 +12,7 @@ const identity = {
 
 const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
 const happy = true;
-const finished = false;
+const finished = true;
 const goal = 3;
 
 const skillColor = 'navy';
@@ -24,7 +23,9 @@ const fontWeight = 'bolder';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{pageTitle}</title>
-    <style define:vars={{skillColor, fontWeight}}>
+  </head>
+  <body>
+    <style is:global define:vars={{skillColor, fontWeight}}>
       h1{
         color: purple;
         font-size: 4rem;
@@ -34,10 +35,8 @@ const fontWeight = 'bolder';
         font-weight: var(--fontWeight);
       }
     </style>
-  </head>
-  <body>
-    <Header />
-    <h1>{pageTitle}</h1>
+
+    <BaseLayout pageTitle = { pageTitle }>
     <p>Here is a few things about me:</p>
     <ul>
       <li>my name is {identity.firstName}!</li>
@@ -53,6 +52,9 @@ const fontWeight = 'bolder';
       {finished && <p>I have finished the tutorial!</p>}
       {goal === 3 ? <p>My goal is to finish in 3 days </p> : <p> My goal is to not finish in 3 days </p>}
     </ul>
-		<Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
+		</BaseLayout>
   </body>
 </html>
