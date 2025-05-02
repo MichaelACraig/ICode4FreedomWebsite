@@ -1,8 +1,16 @@
 ---
-const platform = "X";
-const username = "ICode4Freedom";
+import Social from "./Social.astro"
 ---
+<style>
+  footer{
+    display: flex;
+    gap: 1rem;
+    margin: 2rem;
+  }
+</style>
 
 <footer>
-  <p>Follow me on <a href={`https://www.${platform}.com/${username}`}>{platform}</a>!</p>
+<Social platform = 'X' username = 'ICode4Freedom' />
+<Social platform="Github" username="MichaelMACraig" />
+<Social platform="YouTube" username="ICode4Freedom" />
 </footer>
