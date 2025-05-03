@@ -41,3 +41,17 @@ body{
   background-color: #2F3438;
 }
 
+/* Footer.astro */
+footer{
+  display: flex;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+/* Social.astro; Apart of Footer */
+.social{
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #4c1d95;
+  text-decoration: none;
+}
