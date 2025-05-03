@@ -10,22 +10,15 @@
 
 /*Global CSS */
 body{
+  min-height: 100vh;
   margin: 0;
   background-color: #1e2124;
 }
 
 /* Navbar.astro*/
-.nav{
-  display: inline;
-}
 
-.nav li{
-  float: left;
-}
-
-.nav a {
+.nav a{
   display: block;
-  text-align: center;
   font-family: 'Mechanismo';
   padding: 14px 16px;
   text-decoration: none;
@@ -33,7 +26,13 @@ body{
   color: #fff;
 }
 
-.nav ul{
+.nav a:hover{
+  color:#e2e2e2;
+}
+
+/* Rest of Navbar + Footer.astro */
+
+.nav ul, footer{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -41,17 +40,24 @@ body{
   background-color: #2F3438;
 }
 
-/* Footer.astro */
-footer{
-  display: flex;
-  gap: 1rem;
-  margin: 2rem;
+main{
+  min-height: 100vh;
+  margin-bottom: -30px;
+}
+
+footer, .push{
+  height: 30px;
+  padding: 14px 16px;
 }
 
 /* Social.astro; Apart of Footer */
 .social{
-  padding: 0.5rem 1rem;
+  padding: 2px 2px;
   color: white;
   background-color: #4c1d95;
   text-decoration: none;
+}
+
+.social:hover{
+
 }

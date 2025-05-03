@@ -12,8 +12,11 @@ import '../styles/global.css'
     <title>Document</title>
   </head>
   <body>
-    <Navbar />
-    <slot />
-    <Footer />    
+    <main>
+      <Navbar />
+      <slot />
+      <div class="push"></div>
+    </main>
+    <Footer />
   </body>
 </html>
