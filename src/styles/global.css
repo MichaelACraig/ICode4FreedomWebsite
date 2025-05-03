@@ -3,6 +3,11 @@
   src: url(MechanismoRegular-p7ywa.otf);
 }
 
+@font-face {
+  font-family: 'Fixedsys';
+  src: url(FSEX300.ttf);
+}
+
 /*Global CSS */
 body{
   margin: 0;

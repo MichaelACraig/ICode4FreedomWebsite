@@ -1,0 +1,4 @@
+- Terminal style is really cool, keep going with that
+- Make images "load" bit by bit, cool animation
+  - Maybe do text as well? Similar to Fallout text being loaded onto Pipboy!
+- Add a section at the start for an audio clip; Probably put in the BlogLayout.astro
