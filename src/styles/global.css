@@ -16,15 +16,17 @@ body{
 }
 
 /* Navbar.astro*/
-
 .nav a{
-  display: block;
   font-family: 'Mechanismo';
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 32px;
   color: #fff;
 }
+
+.nav div{
+  padding: 14px 16px;
+}
+
 
 .nav a:hover{
   color:#e2e2e2;
@@ -54,10 +56,11 @@ footer, .push{
 .social{
   padding: 2px 2px;
   color: white;
-  background-color: #4c1d95;
+  background-color: #3128dc;
+  font-family: 'Fixedsys';
   text-decoration: none;
 }
 
 .social:hover{
-
+  background-color: #382ef3;
 }
