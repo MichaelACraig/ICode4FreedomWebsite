@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
+
 const allPosts = Object.values(import.meta.glob('./blogs/*.md', {eager: true})); // All blog posts in posts directory
 ---
 
