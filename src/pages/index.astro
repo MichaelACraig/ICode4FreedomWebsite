@@ -5,7 +5,7 @@ const allPosts = Object.values(import.meta.glob('./blogs/*.md', {eager: true}));
 ---
 
 <BaseLayout>
-  <ul>
+  <ul class="blog-list">
     {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
   </ul>
 </BaseLayout>
