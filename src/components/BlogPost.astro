@@ -1,7 +1,22 @@
 ---
 // Component for Blogposts on Home Page (index.astro)
 
-const {url, title} = Astro.props;
+const {url, title, description, pubDate, tags = []} = Astro.props;
 ---
 
-<li><a href ={url}>{title}</a></li>
+<li class="blogpost">
+  <div>
+    <a href ={url}>{title}</a>
+  </div>
+  <div class="blog-info">
+    <p>{pubDate.toString().slice(0,10)}</p>
+    <p><u>Description:</u> {description}</p>
+  </div>
+  {tags.length > 0 && (
+    <div class="tags">
+      <p class="tags">
+        Tags: {tags.join(', ')}
+      </p>
+    </div>
+  )}
+</li>

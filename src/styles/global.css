@@ -14,7 +14,7 @@ body{
   min-height: 100vh;
   margin: 0;
   background-color: #1e2124;
-  color: #c5c5c5;
+  color: #fff;
 }
 
 /* Navbar.astro*/
@@ -54,7 +54,29 @@ footer, .push{
   padding: 14px 16px;
 }
 
-/* Blogs List */
+/* Blogs List + Blog Components on Home Page */
+.blog-list li{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 8rem;
+
+  margin-bottom: 1.5rem;
+  list-style: none;
+
+  border-style: solid;
+  border-width: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.blog-list li .tags{
+  margin-top: auto;
+}
+
+.blog-info{
+  margin-top: 0.5rem;
+} 
+
 .blog-list{
   width: 40%;
 }
@@ -67,7 +89,7 @@ footer, .push{
 
 .blog-list a:link,
 .blog-list a:visited {
-  color: #c5c5c5;
+  color: #fff;
 }
 
 .blog-list a:hover,
@@ -76,19 +98,14 @@ footer, .push{
   color:#e2e2e2;
 }
 
-
-.blog-list li{
-  margin-bottom: 1.5rem;
-  list-style: none;
-  padding-bottom: 4.5rem;
-  border-style: solid;
-  border-width: 0.25rem;
-  border-radius: 0.25rem;
+.blog-list p{
+  margin: 0;
+  padding-left: 0.15rem;
 }
 
 /* Social.astro; Apart of Footer */
 .social{
-  padding: 2px 2px;
+  padding: 0.125rem 0.125rem;
   color: #fff;
   background-color: #3128dc;
   font-family: 'Fixedsys';
