@@ -1,4 +1,16 @@
+
+*** Main Fixes for MVP ***
 - Terminal style is really cool, keep going with that
+- Make it so blog-list components (BlogPost) adjust to whatever screen size/adjustment
+- Make blogs scroll down so it doesn't add to the length of the page
+- Add "About me" Page; Pretty basic, make same layout as blogposts
+- Add images and a decent way of formatting them so it works well with the website
+- Add subscribe feature and email notifications for users
+- Add a buy me coffee donation button
+- Add a section at the start for an audio clip; Probably put in the BlogLayout.astro
+
+*** Features ***
+- Add search bar for specific blogs users want w/ tags
+- Add preview button on each blog list that can allow people to view the article on the righthand side before reading it
 - Make images "load" bit by bit, cool animation
   - Maybe do text as well? Similar to Fallout text being loaded onto Pipboy!
-- Add a section at the start for an audio clip; Probably put in the BlogLayout.astro
