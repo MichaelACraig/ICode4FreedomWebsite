@@ -12,3 +12,5 @@
 - Add preview button on each blog list that can allow people to view the article on the righthand side before reading it
 - Make images "load" bit by bit, cool animation
   - Maybe do text as well? Similar to Fallout text being loaded onto Pipboy!
+- Add color change to light mode, with it being more of a stylistic change than a basic color change
+  - Creams, Whites, Romanesque vibes to represent philosophy/stoic side of my personality. Can represent how I enjoy both technology and the brutal design/style choices of it + how I merge that with that kind of style.

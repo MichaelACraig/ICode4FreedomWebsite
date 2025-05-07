@@ -53,6 +53,12 @@ footer, .push{
   padding: 0.875rem 1rem;
 }
 
+footer{
+  display: flex;
+  justify-content: left;
+  gap: 0.5rem;
+}
+
 /* Blogs List + Blog Components on Home Page */
 .blog-list li{
   display: flex;
@@ -114,13 +120,26 @@ ul.blog-list{  /* Scroll feature for blog-list */
 .social{
   padding: 0.125rem 0.125rem;
   color: #fff;
-  background-color: #3128dc;
+  background-color: #000000;
   font-family: 'Fixedsys';
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
 .social:hover{
   background-color: #382ef3;
+}
+
+/* ImageLink.astro */
+
+.img-link{
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.img-link:hover{
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
 }
 
 /* About me Button (Homepage Only) */
