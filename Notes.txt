@@ -4,7 +4,6 @@
 - Add "About me" Page; Pretty basic, make same layout as blogposts
 - Add images and a decent way of formatting them so it works well with the website
 - Add subscribe feature and email notifications for users
-- Add a buy me coffee donation button
 - Add a section at the start for an audio clip; Probably put in the BlogLayout.astro
 
 *** Features ***

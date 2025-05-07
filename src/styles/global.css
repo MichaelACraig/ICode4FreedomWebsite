@@ -108,7 +108,7 @@ footer{
 
 ul.blog-list{  /* Scroll feature for blog-list */
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 40rem;
 }
 
