@@ -100,10 +100,15 @@ footer, .push{
   margin-top: auto;
 }
 
+ul.blog-list{  /* Scroll feature for blog-list */
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 40rem;
+}
+
 .blog-info{
   margin-top: 0.5rem;
 } 
-
 
 /* Social.astro; Apart of Footer */
 .social{
@@ -116,4 +121,28 @@ footer, .push{
 
 .social:hover{
   background-color: #382ef3;
+}
+
+/* About me Button (Homepage Only) */
+.about{
+  font-size: 1.5rem;
+  position: absolute;
+  top: -0.25rem;
+  right: 2rem;
+
+}
+
+.about a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.about li{
+  list-style-type: none;
+}
+
+.about a:hover,
+.about a:link:hover,
+.about a:visited:hover{
+  color:#b9b9b9;
 }

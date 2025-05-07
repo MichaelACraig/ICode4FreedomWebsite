@@ -1,8 +1,6 @@
 
 *** Main Fixes for MVP ***
 - Terminal style is really cool, keep going with that
-- Make it so blog-list components (BlogPost) adjust to whatever screen size/adjustment
-- Make blogs scroll down so it doesn't add to the length of the page
 - Add "About me" Page; Pretty basic, make same layout as blogposts
 - Add images and a decent way of formatting them so it works well with the website
 - Add subscribe feature and email notifications for users
