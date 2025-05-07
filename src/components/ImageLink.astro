@@ -1,7 +1,8 @@
 ---
 const {imgName, username} = Astro.props;
+
 ---
 
-<a href=`https://www.${imgName}.com/${username}`>
+<a href=`https://www.${imgName}.com/${username}` target="_blank">
   <img class="img-link" src=`../src/images/${imgName}.svg` alt="">
 </a>
