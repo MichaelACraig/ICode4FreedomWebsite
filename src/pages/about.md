@@ -10,4 +10,4 @@ I was first introduced to technology when I was 9, where I built my first comput
 
 I've never really seen myself as a remarkable person and have basically been coasting through life, but it's gotten me pretty far along. I go to a Top-10 university in the US and I have everything lined up for me to succeed when I leave college. Even with all of this success on paper, something just felt wrong, missing. I realized that I wasn't living with intention, and even though this coasting has gotten me far, it has not led me to anything fufilling. I've just been going through the motions instead of truly living my life. I've realized that if I continue to live this way that once I graduate, I'll find a well-paying job and settle, not really living a fufilling life and just be another face in the corporate world. This isn't the type of life I want to lead, and I decided to change my life and live intentionally.
 
-The main goal 
+The main vision I have for my life and what leads my daily life to always have purpose is through this vision:

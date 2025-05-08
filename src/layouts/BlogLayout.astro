@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
+import AudioTrack from "../components/AudioTrack.astro";
 
 const {frontmatter} = Astro.props;
 ---
@@ -7,5 +8,6 @@ const {frontmatter} = Astro.props;
 <BaseLayout>
   <h1>{frontmatter.title}</h1>
   <p>{frontmatter.pubDate && frontmatter.pubDate.toString().slice(0,10)}</p>
+  {frontmatter.trackName && <AudioTrack />}
   <slot />
 </BaseLayout>

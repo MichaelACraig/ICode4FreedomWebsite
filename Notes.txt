@@ -13,3 +13,8 @@
   - Maybe do text as well? Similar to Fallout text being loaded onto Pipboy!
 - Add color change to light mode, with it being more of a stylistic change than a basic color change
   - Creams, Whites, Romanesque vibes to represent philosophy/stoic side of my personality. Can represent how I enjoy both technology and the brutal design/style choices of it + how I merge that with that kind of style.
+
+** Important Notes **
+- Make sure you put trackName as a variable within the frontmatter if you have an audio clip and
+ ensure it corresponds to the name of the audio clip! This makes it so the AudioTrack component pops up when an audio track for a blog
+ is available
