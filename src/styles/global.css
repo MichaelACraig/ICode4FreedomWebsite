@@ -116,6 +116,23 @@ ul.blog-list{  /* Scroll feature for blog-list */
   margin-top: 0.5rem;
 } 
 
+/* Content of Blogs */
+.content{
+  width: 60%;
+}
+
+.blogpost h1{
+  padding-left: 0.45rem;
+}
+
+.blogpost p,
+.content h2,
+.content h3,
+.content h4{
+  padding-left: 1rem;
+
+}
+
 /* Social.astro; Apart of Footer */
 .social{
   padding: 0.125rem 0.125rem;
