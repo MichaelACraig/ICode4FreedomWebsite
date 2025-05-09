@@ -121,7 +121,8 @@ ul.blog-list{  /* Scroll feature for blog-list */
   width: 60%;
 }
 
-.blogpost h1{
+.blogpost h1,
+.blogpost h3 {
   padding-left: 0.45rem;
 }
 

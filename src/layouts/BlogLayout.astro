@@ -8,7 +8,7 @@ const {frontmatter} = Astro.props;
 <BaseLayout>
   <div class="blogpost">
     <h1 class = "title">{frontmatter.title}</h1>
-    <p class="pubDate">{frontmatter.pubDate && frontmatter.pubDate.toString().slice(0,10)}</p>
+    <h3 class="pubDate">{frontmatter.pubDate && frontmatter.pubDate.toString().slice(0,10)}</h3>
     {frontmatter.trackName && <AudioTrack />}
     <div class="content">
       <slot />
