@@ -106,10 +106,22 @@ footer{
   margin-top: auto;
 }
 
-ul.blog-list{  /* Scroll feature for blog-list */
+/* Scroll feature for blog-list */
+
+ul.blog-list{
+  direction: rtl;
   overflow: hidden;
   overflow-y: auto;
   height: 40rem;
+
+  scrollbar-color: brown;
+  scrollbar-width: thin;
+
+
+}
+
+.blog-list-content{
+  direction: ltr;
 }
 
 .blog-info{
@@ -119,6 +131,24 @@ ul.blog-list{  /* Scroll feature for blog-list */
 /* Content of Blogs */
 .content{
   width: 60%;
+}
+
+/* Blogpost divider (horizontal rule) */
+.divider{
+  width: 55%;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.vertical-divider{
+  width: 1px;
+  background-color: #fff;
+  margin: 0 1rem
+}
+
+/* Audio tracks */
+audio{
+  width: 10rem;
 }
 
 .blogpost h1,
