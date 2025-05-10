@@ -6,19 +6,22 @@ const {frontmatter} = Astro.props;
 ---
 
 <BaseLayout>
-  <div class="blogpost">
-    <h1 class = "title">{frontmatter.title}</h1> {frontmatter.trackName && <AudioTrack />}
-    <h3 class="pubDate">{frontmatter.pubDate && frontmatter.pubDate.toString().slice(0,10)}</h3>
-    <hr class="divider">
 
-    <div class="content">
-      <slot/>
-    </div>
+  <div class="blogpost-layout">
+      <div class="blogpost">
+        <h1 class = "title">{frontmatter.title}</h1> {frontmatter.trackName && <AudioTrack />}
+        <h3 class="pubDate">{frontmatter.pubDate && frontmatter.pubDate.toString().slice(0,10)}</h3>
 
-    <dv class="vertical-divider"></dv>
+        <hr class="divider">
 
-    <div class="image-content">
+        <div class="content">
+          <slot/>
+        </div>
 
-    </div>
-</div>
+        <div class="image-content">
+          <slot name="images"/>
+        </div>
+        
+      </div>
+  </div>
 </BaseLayout>
