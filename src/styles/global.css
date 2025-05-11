@@ -8,11 +8,14 @@
   src: url(FSEX300.ttf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 :root {
   /* Colors */
   --bg:   #1e2124;
   --fg: #fff;
   --fg-d: #b9b9b9;   /* dimmed on hover */
+  --terminal-green: #00ff00;
   --ui-bg: #2f3438;  /* nav/footer */
   --ui-accent: #382ef3;
   
@@ -63,11 +66,55 @@ body, h1, h2, p, .divider {
     0 0 12px rgba(51,255,51,0.3);
 }
 
+/* Tags before start of each paragraph */
 .content p::before {
   content: "> ";
   color: var(--fg);
 }
 
+
+/* fadeIn Animation for text in blogposts */
+
+@keyframes fadeIn{
+  to{
+    opacity: 1;
+  }
+}
+
+.title, .pubDate, audio, hr{
+  opacity: 0;
+  animation: fadeIn 0.1s forwards;
+}
+
+.content p{
+  opacity: 0;
+  animation: fadeIn 0.1s forwards;
+}
+
+.content p:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.content p:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.content p:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.content p:nth-child(4) {
+  animation-delay: 0.1s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content p {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* Blinking "_" at end of blogpost to mimic terminal */
 .content p:last-child::after {
   content: "_";
   animation: blink 1s steps(1) infinite;
@@ -270,4 +317,10 @@ audio{
 .about a:link:hover,
 .about a:visited:hover{
   color: var(--fg-d);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
 }
