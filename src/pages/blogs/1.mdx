@@ -11,8 +11,13 @@ trackName: 1
 
 tags: ["astro", "blogging", "learning in public"]
 ---
+
+import {Image} from 'astro:assets';
+import astro from '/src/images/astro.jpg'
+
 # So, What Have I Learned?
-![A starry night sky.](/src/images/astro.jpg)
+
+<Image src={astro} alt="Test image" />
 
 Well, I learned about Astro and what it is as a Web Framework. Astro is a lightweight framework that makes it much easier to build a website. You can utilize heavier frameworks like React along with it, so you can have the best of both worlds from a static and dynamic website/web app
 
