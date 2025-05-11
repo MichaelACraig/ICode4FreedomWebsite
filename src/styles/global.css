@@ -28,12 +28,14 @@
 
 /* Global CSS + Overlays + Animations */
 
-body{
+body {
   font-family: var(--font-mono);
   min-height: 100vh;
   margin: 0;
   background-color: var(--bg);
   color: var(--fg);
+  display: flex;
+  flex-direction: column;
 }
 
 /* Scanlines Overlay; Terminal Style */
@@ -104,15 +106,15 @@ body, h1, h2, p, .divider {
 
 main{
   min-height: 100vh;
-  margin-bottom: -1.875rem;
+  flex-grow: 1;
 }
 
 footer, .push{
   height: 1.875rem;
-  padding: 0.875rem 1rem;
 }
 
-footer{
+footer {
+  padding: 0.875rem 1rem;
   display: flex;
   justify-content: left;
   gap: 0.5rem;
@@ -170,13 +172,11 @@ footer{
 ul.blog-list{
   direction: rtl;
   overflow-y: auto;
-  height: 40rem;
+  height: 51rem;
 
   scrollbar-width: thin;
   scrollbar-color: var(--fg) var(--ui-bg);
 }
-
-
 
 .blog-list-content{
   direction: ltr;
