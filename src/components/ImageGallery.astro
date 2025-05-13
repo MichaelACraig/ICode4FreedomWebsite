@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+const {images, altPrefix = ""} = Astro.props;
+---
+
+<div class="gallery">
+  {images.map((src, i) => (
+    <figure key={i}>
+      <Image src={src} alt={`${altPrefix} ${i + 1}`} width={600} height={400} />
+    </figure>
+  ))}
+</div>

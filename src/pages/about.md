@@ -26,4 +26,4 @@ Just know that I'm a real person, just like you, who just wants to help others, 
 
 I do it all for my own personal freedom; Freedom of my mind and the ability to live my life with purpose. I hope that choose to live freely, and with intention and purpose as well. Thanks for reading :)
 
--- Mike
+Mike
