@@ -193,7 +193,13 @@ ul.blog-list{
 
 /* Content of Blogs */
 .content{
+  display: flex;
+  align-items: stretch;
   width: 60%;
+}
+
+.text-content{
+  flex: 1;
 }
 
 /* Blogpost divider (horizontal rule) */
@@ -203,10 +209,9 @@ ul.blog-list{
   margin-right: auto;
 }
 
-.vertical-divider{
-  width: 1px;
-  background-color: var(--fg);
-  margin: 0 1rem
+.vert-divider{
+  border-left: solid var(--fg);
+  margin: 1rem;
 }
 
 /* Audio tracks */
@@ -275,4 +280,24 @@ audio{
 .about a:link:hover,
 .about a:visited:hover{
   color: var(--fg-d);
+}
+
+
+/* Image Content */
+.image-content{
+  display: flex;
+  max-width: 40%;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 20rem;
+  right: 0;
+
+  overflow: auto;
+}
+
+.image-content figure img{
+  max-width: 100%;
+  height: auto;
 }
