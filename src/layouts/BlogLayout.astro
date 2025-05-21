@@ -15,16 +15,15 @@ const {frontmatter} = Astro.props;
           {frontmatter.trackName && <AudioTrack />}
           <h3 class="pubDate">{frontmatter.pubDate && frontmatter.pubDate.toString().slice(0,10)}</h3>
         </div>
-        
+
         <hr class="divider" />
-        
+
         <div class="content">
           <div class="text-content">
             <slot/>
           </div>
           <div class="vert-divider"></div>
         </div>
-
 
         <div class="image-content">
           <ImageGallery images={frontmatter.images} altPrefix={frontmatter.title} />
