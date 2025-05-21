@@ -5,18 +5,14 @@ const {url, title, description, pubDate, tags = []} = Astro.props;
 ---
 
 <li class="blogpost">
-  <div>
-    <a href ={url}>{title}</a>
-  </div>
-  <div class="blog-info">
-    <p>{pubDate.toString().slice(0,10)}</p>
-    <p><u>Description:</u> {description}</p>
+  <div class="blog-content">
+    <a class="title-link" href ={url}>{title}</a>
+    <div class="blog-info">
+      <p>{pubDate.toString().slice(0,10)}</p>
+      <p><u>Description:</u> {description}</p>
+    </div>
   </div>
   {tags.length > 0 && (
-    <div class="tags">
-      <p class="tags">
-        Tags: {tags.join(', ')}
-      </p>
-    </div>
+      <p class="tags"> Tags: {tags.join(', ')} </p>
   )}
 </li>

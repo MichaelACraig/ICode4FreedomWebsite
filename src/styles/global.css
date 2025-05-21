@@ -116,6 +116,7 @@ main{
 
 footer, .push{
   height: 1.875rem;
+  overflow: auto;
 }
 
 footer {
@@ -297,13 +298,22 @@ audio{
   box-sizing: border-box;
 
   position: absolute;
-  top: 20rem;
+  top: 15.3rem;
   right: 0;
 
   overflow: auto;
 }
 
+@keyframes sweep{
+  to{
+    clip-path: inset(0 0 0);
+  }
+}
+
 .image-content figure img{
   max-width: 100%;
   height: auto;
+  object-fit: cover;
+  clip-path: inset(0 100% 0 0);
+  animation: sweep 8s ease-in forwards;
 }
