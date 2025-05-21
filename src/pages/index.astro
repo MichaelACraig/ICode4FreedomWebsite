@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
 import AboutButton from "../components/AboutButton.astro";
+import SubscribeButton from "../components/SubscribeButton.astro";
 
 const allPosts = Object.values(import.meta.glob('./blogs/*.md', {eager: true})).reverse(); // All blog posts in posts directory
 ---
@@ -13,4 +14,5 @@ const allPosts = Object.values(import.meta.glob('./blogs/*.md', {eager: true})).
     </div>
   </ul>
   <AboutButton />
+  <SubscribeButton />
 </BaseLayout>

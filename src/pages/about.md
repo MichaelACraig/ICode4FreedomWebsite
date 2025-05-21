@@ -2,6 +2,8 @@
 layout: "../layouts/BlogLayout.astro"
 title: "My Story"
 description: "About me Post"
+images:
+
 ---
 
 Hi there, my name is Michael. I'm a Computer Science student that has general expertise in many different areas of Computer Science, from AI/ML to Web Dev. I'm actually learning Astro + Preact to build out this website!

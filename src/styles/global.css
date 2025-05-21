@@ -193,6 +193,7 @@ ul.blog-list{
 
 /* Content of Blogs */
 .content{
+  position: relative;
   display: flex;
   align-items: stretch;
   width: 60%;
@@ -204,14 +205,15 @@ ul.blog-list{
 
 /* Blogpost divider (horizontal rule) */
 .divider{
-  width: 55%;
+  width: 100%;
   margin-left: 0;
   margin-right: auto;
 }
 
 .vert-divider{
   border-left: solid var(--fg);
-  margin: 1rem;
+  margin: 0 1rem;
+  /* height: 100vh; */
 }
 
 /* Audio tracks */
@@ -230,6 +232,10 @@ audio{
 .content h4{
   padding-left: 1rem;
 
+}
+
+.blog-header{
+  max-width: 45rem;
 }
 
 /* Social.astro; Apart of Footer */
