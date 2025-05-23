@@ -9,12 +9,14 @@ const allPosts = Object.values(import.meta.glob('./blogs/*.md', {eager: true})).
 ---
 
 <BaseLayout>
-  <ul class="blog-list">
-    <div class="blog-list-content">
-      {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} pubDate = {post.frontmatter.pubDate}description={post.frontmatter.description} tags = {post.frontmatter.tags} />)}
-    </div>
-    <Terminal client:visible />
-  </ul>
-  <AboutButton />
-  <SubscribeButton />
+  <div class="homepage-content">
+    <ul class="blog-list">
+      <div class="blog-list-content">
+        {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} pubDate = {post.frontmatter.pubDate}description={post.frontmatter.description} tags = {post.frontmatter.tags} />)}
+      </div>
+    </ul>
+    <Terminal />
+    <AboutButton />
+    <SubscribeButton />
+  </div>
 </BaseLayout>

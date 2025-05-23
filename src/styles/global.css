@@ -319,3 +319,50 @@ audio{
   animation: sweep 8s ease-in forwards;
   animation-delay: 10s;
 }
+
+/* Homepage Content */
+.homepage-content{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fake Terminal on the homepage */
+.terminal {
+  width: 55rem;
+  margin: 50px auto;
+  background: #000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+  position: absolute;
+  right: 0.5rem;
+  top: 2rem;
+}
+
+.terminal-body {
+  padding: 10px;
+  height: 50rem;
+  overflow-y: auto;
+}
+
+#output {
+  min-height: 20px;
+}
+
+.input-line {
+  display: flex;
+}
+
+.prompt {
+  color: var(--terminal-green);
+  margin-right: 5px;
+}
+
+#command-input {
+  background: transparent;
+  border: none;
+  color: var(--terminal-green);
+  font-family: 'Courier New', monospace;
+  width: 100%;
+  outline: none;
+}
