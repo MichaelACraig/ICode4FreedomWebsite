@@ -1,19 +1,16 @@
 
 *** Main Fixes for MVP ***
-- Terminal style is really cool, keep going with that
-  - Focus on interactability; should feel like a user is interacting with a terminal to read the blogposts
-- Add images and a decent way of formatting them so it works well with the website
-  - Have user click a button to "load" the image; interactability
-  - Make images "load" bit by bit, cool animation
+- Terminal for homepage
+  - ASCII Animations;
 - Add subscribe feature and email notifications for users
 
 *** Features ***
+- Add loading text to each blogpost similar to how a terminal loads in text
 - Add search bar for specific blogs users want w/ tags
-- Add preview button on each blog list that can allow people to view the article on the righthand side before reading it
-  - Maybe do text as well? Similar to Fallout text being loaded onto Pipboy!
+- Add a music section for songs I like (Reference Poolsuite's way of doing it!)
+
 - Add color change to light mode, with it being more of a stylistic change than a basic color change
   - Creams, Whites, Romanesque vibes to represent philosophy/stoic side of my personality. Can represent how I enjoy both technology and the brutal design/style choices of it + how I merge that with that kind of style.
-- ASCII Animations;
 
 ** Important Notes **
 - Make sure you put trackName as a variable within the frontmatter if you have an audio clip and

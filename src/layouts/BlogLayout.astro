@@ -2,6 +2,7 @@
 import BaseLayout from "./BaseLayout.astro";
 import AudioTrack from "../components/AudioTrack.astro";
 import ImageGallery from "../components/ImageGallery.astro";
+import BlogTyping from "../scripts/BlogTyping.astro"
 
 const {frontmatter} = Astro.props;
 ---
@@ -20,7 +21,9 @@ const {frontmatter} = Astro.props;
 
         <div class="content">
           <div class="text-content">
-            <slot/>
+            <BlogTyping>
+              <slot/>
+            </BlogTyping>
           </div>
           <div class="vert-divider"></div>
         </div>

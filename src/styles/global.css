@@ -200,6 +200,7 @@ ul.blog-list{
   width: 60%;
 }
 
+/* Text content; Also contains the loading of the font */
 .text-content{
   flex: 1;
 }
@@ -316,4 +317,5 @@ audio{
   object-fit: cover;
   clip-path: inset(0 100% 0 0);
   animation: sweep 8s ease-in forwards;
+  animation-delay: 10s;
 }

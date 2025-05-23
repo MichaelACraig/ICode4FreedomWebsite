@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
 import AboutButton from "../components/AboutButton.astro";
 import SubscribeButton from "../components/SubscribeButton.astro";
+import Terminal from "../components/Terminal.astro";
 
 const allPosts = Object.values(import.meta.glob('./blogs/*.md', {eager: true})).reverse(); // All blog posts in posts directory
 ---
@@ -12,6 +13,7 @@ const allPosts = Object.values(import.meta.glob('./blogs/*.md', {eager: true})).
     <div class="blog-list-content">
       {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} pubDate = {post.frontmatter.pubDate}description={post.frontmatter.description} tags = {post.frontmatter.tags} />)}
     </div>
+    <Terminal client:visible />
   </ul>
   <AboutButton />
   <SubscribeButton />
