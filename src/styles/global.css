@@ -13,7 +13,7 @@
 :root {
   /* Colors */
   --bg:   #1e2124;
-  --fg: #fff;
+  --fg: #dcdfe4;
   --fg-d: #b9b9b9;   /* dimmed on hover */
   --terminal-green: #00ff00;
   --ui-bg: #2f3438;  /* nav/footer */
@@ -27,6 +27,11 @@
   --gutter: 1rem;
   --border-w: 2px;
   --radius: 4px;
+
+  /* Terminal Colors */
+  --term-bg: #1e1f2a;
+  --term-bc: #dcdfe4;
+  --term-tc: #bcbcbc;
 }
 
 /* Global CSS + Overlays + Animations */
@@ -59,12 +64,12 @@ body::before{
 }
 
 /* Phospher glow overlay */
-body, h1, h2, p, .divider {
+/* body, h1, h2, p, .divider {
   text-shadow:
     0 0 2px var(--fg),
     0 0 6px rgba(0, 0, 0, 0.6),
     0 0 12px rgba(51,255,51,0.3);
-}
+} */
 
 /* Tags before start of each paragraph */
 .content p::before {
@@ -330,18 +335,25 @@ audio{
 .terminal {
   width: 55rem;
   margin: 50px auto;
-  background: #000;
+  background: var(--term-bg);
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: solid 5px var(--term-bc);
   
   position: absolute;
   right: 0.5rem;
   top: 2rem;
 }
 
+.terminal-header {
+  background: var(--fg);
+  padding: 7.5px;
+  /* border-top-left-radius: 5px; */
+  /* border-top-right-radius: 5px; */
+}
+
 .terminal-body {
   padding: 10px;
-  height: 50rem;
+  height: 49rem;
   overflow-y: auto;
 }
 
@@ -354,15 +366,16 @@ audio{
 }
 
 .prompt {
-  color: var(--terminal-green);
+  color: var(--term-tc);
   margin-right: 5px;
 }
 
 #command-input {
   background: transparent;
   border: none;
-  color: var(--terminal-green);
-  font-family: 'Courier New', monospace;
+  color: var(--term-tc);
+  font-family: var(--font-mono);
+  font-size: 12px;
   width: 100%;
   outline: none;
 }

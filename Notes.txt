@@ -2,6 +2,11 @@
 *** Main Fixes for MVP ***
 - Terminal for homepage
   - ASCII Animations;
+  - Terminal Command Ideas:
+    - "help" command to understand what commands there are
+    - "clear" command to clear terminal window
+    - Add command for peviewing each blogpost by displaying the markdown
+    
 - Add subscribe feature and email notifications for users
 
 *** Features ***
