@@ -333,6 +333,7 @@ audio{
 
 /* Fake Terminal on the homepage */
 .terminal {
+  /* display: flex; */
   width: 55rem;
   margin: 50px auto;
   background: var(--term-bg);
